@@ -43,7 +43,7 @@ const current_weather = (latitude, longitude) => {
                     winddirection.innerHTML = `${data.current_weather.winddirection} &#176`;
                     weather_code(data.current_weather.weathercode);
                     cityFunction(data.timezone);
-                    console.log(data)
+                    // console.log(data)
                     timeFunction(new Date().toLocaleString("en-US", {timeZone: data.timezone}))
                 })
         })
