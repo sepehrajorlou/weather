@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <style>
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container-sm  height-100">
+
+        <div class="w-100 position-relative ">
+            <img src="./cloudy.jpg" class="w-100  height-100" alt="">
+            <div class="w-100 border border-danger position-absolute" style="top:0">
+                <div class="row px-2">
+                    <div class="col-7">
+                        <div class="position-absolute border border-danger col-5 d-flex flex-row align-items-center justify-content-center"
+                            style="bottom:50px">
+                            <div>
+                                <span class="degree text-light" id="temperature">N/A</span>
+                            </div>
+                            <div class="">
+                                <span class="city text-light d-block mx-5" id="city">N/A</span>
+                                <span class="text-light fw-light mx-5" id="time">N/A</span>
+                            </div>
+                            <div>
+                                <img src="./icons8-cloudy-64.png" class="icon d-block mt-4" alt="">
+                                <span class="text-light fw-light" id="weather-code"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-5 border border-success text-white height-100 backdrop-filter">
+                        <div class="border border-danger p-3">
+                            <div class="border border-warning d-flex justify-content-end">
+                                <div class="search-box">
+                                    <button class="btn-search"><img src="./icons8-search-64.png" alt=""
+                                            class="search-icon"></button>
+                                    <input type="text" class="input-search" placeholder="Type to Search...">
+                                </div>
+                            </div>
+                            <span class="fw-bold h5 d-block mt-4">Weather Detail (Today)</span>
+                            <div class="d-flex flex-row align-items-center justify-content-between mt-4">
+                                <span class="  text-special-gray">wind speed :</span>
+                                <span class=" text-white" id="windspeed"></span>
+                            </div>
+                            <!-- <div class="d-flex flex-row align-items-center justify-content-between mt-4">
+                                <span class="  text-special-gray">humidity : </span>
+                                <span class=" text-white"></span>
+                            </div> -->
+                            <div class="d-flex flex-row align-items-center justify-content-between mt-4">
+                                <span class="text-special-gray">winddirection :</span>
+                                <span class="text-white" id="winddirection"></span>
+                            </div>
+                            <div class="d-flex flex-row align-items-center justify-content-between mt-4">
+                                <span class=" text-special-gray">max tempture :</span>
+                                <span class=" text-white" id="max-tempture"></span>
+                            </div>
+                            <div class="d-flex flex-row align-items-center justify-content-between mt-4">
+                                <span class="  text-special-gray">min tempture : </span>
+                                <span class=" text-white" id="min-tempture"></span>
+                            </div>
+                            <hr class=" d-block">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
